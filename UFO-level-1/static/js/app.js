@@ -25,6 +25,8 @@ tableData.forEach(function(ufoSighting) {
 var button = d3.select("#filter-btn");
 button.on("click", function() {
 
+    d3.event.preventDefault(); 
+
     tbody.html("");
 
     // Select the input date get the raw HTML nodes
